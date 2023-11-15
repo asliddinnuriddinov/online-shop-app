@@ -1,0 +1,52 @@
+.admin__manage{
+    width: 100%;
+
+    h1{
+        padding-bottom: 1px;
+        border-bottom: 2px solid #999999b2;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 72px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+.admin__search{
+    display: flex;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    padding: 16px;
+    gap: 0 20px;
+    form{
+        flex: 1;
+        height: 100%;
+        input{
+            border: none;
+            outline: none;
+            height: 100%;
+            width: 100%;
+            padding: 20px 0;
+            text-indent: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+    }
+    p{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+.manage__products{
+    margin-top: 30px;
+    height: 520px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 5px;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+.home__prodcut-carousel{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    // min-height: 2300px;
+}
+.home__prodcut-carousel h2{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: dodgerblue;
+}
+
+@media only screen and (max-width:731px){
+    .home__prodcut-carousel{
+        margin-bottom: 60px;
+        margin-top: 50px;
+    }
+    .home__prodcut-carousel h2{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 582px){
+    .home__prodcut-carousel{
+        margin-bottom: 35px;
+        margin-top: 40px;
+    }
+    .home__prodcut-carousel h2{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 423px){
+    .home__prodcut-carousel{
+        margin-bottom: 25px;
+        margin-top: 30px;
+    }
+    .home__prodcut-carousel h2{
+        font-size: 12px;
+        margin-top: 13px;
+    }
+}

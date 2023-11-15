@@ -1,0 +1,102 @@
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .product__mySwiper {
+    width: 100%;
+    height: 474px;
+    margin-top: 40px;
+    padding-top: 10px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    background: #fff;
+    min-width: 315px !important;
+    border-radius: 12px;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 13px -1px rgba(0,0,0,.07);
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width:731px){
+    .product__mySwiper {
+      height: 362.9px;
+    }
+    .swiper__slide-product {
+      min-width: 250px !important;
+      width: 250px !important;
+    }
+  }
+
+  @media only screen and (max-width: 582px){
+    .product__mySwiper {
+      height: 250px;
+      margin-top: 22px;
+      .swiper-button-prev{
+        &::after{
+        font-size: 28px;
+        font-weight: 900;
+        }
+      }
+      .swiper-button-next{
+        &::after{
+        font-size: 28px;
+        font-weight: 900;
+        }
+      }
+    }
+    .swiper__slide-product{
+      min-width: 205px !important;
+      width: 205px !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 423px){
+    .product__mySwiper {
+      height: 211px;
+      margin-top: 16px;
+      .swiper-button-prev{
+        &::after{
+        font-size: 17px;
+        }
+      }
+      .swiper-button-next{
+        &::after{
+        font-size: 17px;
+        }
+      }
+    }
+    .swiper__slide-product{
+      min-width: 190px !important;
+      width: 190px !important;
+    }
+  }
+  

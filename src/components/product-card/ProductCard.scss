@@ -1,0 +1,109 @@
+.product-card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 16px;
+    img{
+       height: 230px;
+        width: 100%;
+        object-fit: contain;
+    }
+    h3{
+        text-align: left;
+        color: dodgerblue;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 20px;
+        height: 50px;
+    }
+}
+.product-card__categories{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 16px;
+    height: 40px;
+    span{
+        padding: 3px;
+        background-color: #ececec;
+        color: rgb(41, 34, 34);
+    }
+}
+.product-card__price{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    color: rgb(8, 185, 8);
+}
+
+@media only screen and (max-width:731px){
+    .product-card{
+        img{
+           height: 170px;
+        }
+        h3{
+            font-size: 15px;
+            margin-top: 15px;
+            height: 40px;
+        }
+    }
+    .product-card__categories{
+        font-size: 10px;
+        margin-bottom: 12px;
+        height: 30px;
+    }
+    .product-card__price{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 582px){
+    .product-card{
+        img{
+           height: 110px;
+        }
+        h3{
+            font-size: 10px;
+            margin-top: 10px;
+            height: 25px;
+        }
+    }
+    .product-card__categories{
+        font-size: 6px;
+        margin-bottom: 10px;
+        height: 25px;
+    }
+    .product-card__price{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 423px){
+        .product-card{
+        img{
+           height: 90px;
+        }
+        h3{
+            font-size: 8px;
+            margin-top: 6px;
+            height: 20px;
+        }
+    }
+    .product-card__categories{
+        font-size: 6px;
+        margin-bottom: 6px;
+        height: 20px;
+        span{
+            pad: 2;
+        }
+    }
+    .product-card__price{
+        font-size: 9px;
+    }
+}

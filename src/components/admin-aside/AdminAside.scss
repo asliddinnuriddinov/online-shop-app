@@ -1,0 +1,107 @@
+.admin__aside{
+    background-color: dodgerblue;
+    height: 95vh;
+    min-height: 770px;
+    min-width: 280px;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language__admin{
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    justify-content: space-between;
+    padding: 8px 20px;
+    width: 100%;
+    max-width: 140px;
+    border-radius: 16px;
+    background-color: #f3efef;
+    img{
+        cursor: pointer;
+    }
+}
+
+.admin__account{
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 0 20px;
+    margin-top: 40px;
+}
+.admin__account-logo{
+    background: linear-gradient(180deg,#dfdfdf,rgba(4,4,4,.77));
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        font-size: 34px;
+        fill: #fff;
+    }
+}
+.admin__account-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px 0;
+    p{
+        font-weight: 550;
+    }
+    small{
+        color: dodgerblue;
+        font-size: 15px;
+    }
+}
+
+.admin__aside-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+    gap: 6px 0;
+    a{
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        font-size: 20px;
+        padding: 12px;
+        border-radius: 10px;
+        svg{
+            font-size: 30px;
+        }
+    }
+    .admin__active-link{
+        background-color: #fff;
+        color: dodgerblue;
+        border-radius: 10px;
+        padding: 12px;
+    }
+}
+
+
+.admin__logout{
+    color: #fff;
+    background-color: red;
+    padding: 16px 12px;
+    border: none;
+    width: 90%;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-top: 38px;
+    svg{
+        font-size: 30px;
+    }
+}

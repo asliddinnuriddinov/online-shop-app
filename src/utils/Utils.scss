@@ -1,0 +1,76 @@
+.defaultBtn{
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    line-height: 125%;
+    &:hover{
+        background-color: rgb(3, 99, 194);
+    }
+    &:active{
+        scale: 1.09;
+    }
+    svg{
+        font-size: 22px;
+        margin-right: 10px;
+        margin-top: -4px;
+    }
+}
+
+.container{
+    max-width: 2200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width:731px){
+    .defaultBtn{
+        margin-top: 23px;
+        border: none;
+        font-size: 13px;
+        border-radius: 10px;
+        line-height: 125%;
+        svg{
+            font-size: 16px;
+            margin-right: 10px;
+            margin-top: -4px;
+        }
+    }
+}
+
+@media only screen and (max-width: 582px){
+    .defaultBtn{
+        margin-top: 14px;
+        font-size: 9px;
+        padding: 7px 0;
+        line-height: 115%;
+        svg{
+            font-size: 11px;
+            margin-right: 10px;
+            margin-top: -2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 423px){
+    .defaultBtn{
+        margin-top: 15px;
+        font-size: 9px;
+        padding: 7px 0;
+        line-height: 115%;
+        svg{
+            font-size: 10px;
+            margin-right: 10px;
+            margin-top: -2px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.admin__orders{
+    width: 100%;
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #99999999;
+        width: 100%;
+    }
+}
+.admin__orders-nav{
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    background-color: dodgerblue;
+    justify-content: space-between;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    a{
+        color: #fff;
+        padding: 8px 12px;
+        font-size: 22px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    .admin__orders__active__link{
+        background-color: #fff;
+        color: dodgerblue;
+        border-radius: 10px;
+    }
+}
