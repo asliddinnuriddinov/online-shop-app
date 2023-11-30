@@ -58,12 +58,12 @@ const Nav = () => {
 
   return !exceptionalRoutes.includes(pathname)? (
     <nav>
-      <div onClick={e=>setCategoryOpen(false)} style={categoryOpen?{display:"block"}:{display:"none"}} className="modal__category__aside"></div>
+      <div onClick={e=>{setCategoryOpen(false);document.body.style.overflow="auto"}} style={categoryOpen?{display:"block"}:{display:"none"}} className="modal__category__aside"></div>
       {/* <div style={categoryOpen?{display:"block"}:{display:"none"}} className="category__aside"> */}
         <div style={categoryOpen?{transform:"translateX(0)"}:{transform:"translateX(-800px)"}} className="category__aside__content">
           <div className="category__aside__head">
             <img className="main__logo"  src="http://localhost:5173/src/assets/images/logo-footer.svg" alt="" />
-            <button className="category__aside__close" onClick={e=>setCategoryOpen(false)}><FaTimes/></button>
+            <button className="category__aside__close" onClick={e=>{setCategoryOpen(false);document.body.style.overflow="auto"}}><FaTimes/></button>
           </div>
             <div className="category__aside__content__wrapper">
             <div style={subCategoryOpen?{transform:"translateX(-100%)"}:{transform:"translateX(0%)"}} className="category__aside__main">
@@ -135,7 +135,7 @@ const Nav = () => {
             <Link to="/">
               <img className="main__logo"  src={Logo} alt="" />
             </Link>
-            <button onClick={e=>setCategoryOpen(!categoryOpen)}><AiOutlineAppstore/></button>
+            <button onClick={e=>{setCategoryOpen(!categoryOpen);document.body.style.overflow="hidden"}}><AiOutlineAppstore/></button>
             </div>
 
             <div className="nav__main-searchbar">

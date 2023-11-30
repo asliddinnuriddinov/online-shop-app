@@ -47,11 +47,11 @@ const Cart = () => {
               
             <div  className="cart__wrapper">
               
-            <div style={cartState?{display:"none"}:{display:"flex"}} onClick={()=>{setCartOpen(true);dispatch({type:"CHANGE_CART_STATE",changedCartState:true})}} className="cart__btn__wrapper">
+            <div style={cartState?{display:"none"}:{display:"flex"}} onClick={()=>{setCartOpen(true);dispatch({type:"CHANGE_CART_STATE",changedCartState:true});document.body.style.overflow="hidden"}} className="cart__btn__wrapper">
             <button  className='cart__btn'><FiShoppingCart/><p>{totalCount}</p></button>
             <strong className='cart__total__price'>{sum} CУМ</strong>
             </div>
-            <button style={cartState?{display:"block"}:{display:"none"}}onClick={e=>{setCartOpen(false);dispatch({type:"CHANGE_CART_STATE",changedCartState:false})}} className='close__cart__btn'><FaTimes/></button>
+            <button style={cartState?{display:"block"}:{display:"none"}}onClick={e=>{setCartOpen(false);dispatch({type:"CHANGE_CART_STATE",changedCartState:false});document.body.style.overflow="auto"}} className='close__cart__btn'><FaTimes/></button>
               {
                 productData.length>0?
                 <>

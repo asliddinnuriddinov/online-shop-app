@@ -32,7 +32,7 @@ function App() {
         <ScrollToTop/>
         <Cart/>
 
-    <div onClick={e=>dispatch({type:"CHANGE_CART_STATE",changedCartState:false})} style={cartState?{width:"100vw",height:"100vh",position:"fixed",top:"0",left:"0",background:"rgba(0, 0, 0, 0.333)",zIndex:"9"}:{width:"0",height:"0"}}>
+    <div onClick={e=>{dispatch({type:"CHANGE_CART_STATE",changedCartState:false});document.body.style.overflow="auto"}} style={cartState?{width:"100vw",height:"100vh",position:"fixed",top:"0",left:"0",background:"rgba(0, 0, 0, 0.333)",zIndex:"9"}:{width:"0",height:"0"}}>
     </div>
     <Nav/>  
         <Routes>
